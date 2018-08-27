@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ALA Web Controller</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+
+<body>
+
+
+</div>
+    <div class="container">
+        <h1>ALA Web Controller</h1>
+
+
+<div class="panel panel-default">
+<div class="panel-heading">Color</div>
+<div class="panel-body">
+    <form action="/color/" method="post">
+        
+		<div class="row">
+            <div class="col-sm-12 btn-group" role="group">
+                <button class="btn btn-default" name="FF0000" type="submit">Red</button>
+                <button class="btn btn-default" name="FFD700" type="submit">Gold</button>
+                <button class="btn btn-default" name="FFA500" type="submit">Orange</button>
+                <button class="btn btn-default" name="DC143C" type="submit">Crimson</button>
+                <button class="btn btn-default" name="FF00FF" type="submit">Magenta</button>
+                <button class="btn btn-default" name="EE82EE" type="submit">Violet</button>
+                <button class="btn btn-default" name="800080" type="submit">Purple</button>
+                <button class="btn btn-default" name="0000FF" type="submit">Blue</button>
+                <button class="btn btn-default" name="00FFFF" type="submit">Cyan</button>
+                <button class="btn btn-default" name="008080" type="submit">Teal</button>
+                <button class="btn btn-default" name="40E0D0" type="submit">Turquoise</button>
+                <button class="btn btn-default" name="00FF00" type="submit">Green</button>
+                <button class="btn btn-default" name="FFFF00" type="submit">Yellow</button>
+				</div>
+        </div>
+    </form>
+</div>
+</div>
+
+<div class="row">
+<div class="col-sm-4">
+    <div class="panel panel-default">
+        <div class="panel-heading">Brightness</div>
+        <div class="panel-body" class="btn-group" role="group">
+            <form action="/brightness/" method="post">
+			
+                <button class="btn btn-default" name="25" type="submit">10%</button>
+                <button class="btn btn-default" name="51" type="submit">20%</button>
+                <button class="btn btn-default" name="102" type="submit">40%</button>
+                <button class="btn btn-default" name="153" type="submit">60%</button>
+                <button class="btn btn-default" name="204" type="submit">80%</button>
+                <button class="btn btn-default" name="255" type="submit">100%</button>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="col-sm-4">
+    <div class="panel panel-default">
+        <div class="panel-heading">Duration</div>
+        <div class="panel-body" class="btn-group" role="group">
+            <form action="/duration/" method="post">
+                <div class="input-group">
+                    <input type="text" name="duration" class="form-control" placeholder="Duration">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="submit">Set</button>
+                    </span>
+					
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="col-sm-4">
+    <div class="panel panel-default">
+        <div class="panel-heading">Duration 2</div>
+        <div class="panel-body" class="btn-group" role="group">
+            <form action="/duration2/" method="post">
+			
+                <button class="btn btn-default" name="1000" type="submit">1000</button>
+                <button class="btn btn-default" name="1250" type="submit">1250</button>
+                <button class="btn btn-default" name="1500" type="submit">1500</button>
+                <button class="btn btn-default" name="1725" type="submit">1725</button>
+                <button class="btn btn-default" name="2000" type="submit">2000</button>
+                <button class="btn btn-default" name="3000" type="submit">3000</button>
+				<button class="btn btn-default" name="()" type="submit">+</button>
+                <button class="btn btn-default" name=")(" type="submit">-</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+</div>
+
+
+<div class="panel panel-default">
+    <div class="panel-heading">Animation</div>
+    <div class="panel-body">
+        <form action="/anim/" method="post">
+            <div class="row">
+                <div class="col-sm-4 btn-group-vertical" role="group">
+                    <button class="btn btn-default" name="0" type="submit"> Static </button>
+					<button class="btn btn-default" name="1" type="submit"> Blink  </button>
+					<button class="btn btn-default" name="2" type="submit"> Breath </button>
+					<button class="btn btn-default" name="3" type="submit"> Color Wipe </button>
+					<button class="btn btn-default" name="4" type="submit"> Color Wipe Inverse </button>
+					<button class="btn btn-default" name="5" type="submit"> Color Wipe Reverse </button>
+					<button class="btn btn-default" name="6" type="submit"> Color Wipe Reverse Inverse </button>
+					<button class="btn btn-default" name="7" type="submit"> Color Wipe Random </button>
+					<button class="btn btn-default" name="8" type="submit"> Random Color  </button>
+					<button class="btn btn-default" name="9" type="submit"> Single Dynamic  </button>
+					<button class="btn btn-default" name="10" type="submit"> Multi Dynamic  </button>
+					<button class="btn btn-default" name="11" type="submit"> Rainbow  </button>
+					<button class="btn btn-default" name="12" type="submit"> Rainbow Cycle  </button>
+					<button class="btn btn-default" name="13" type="submit"> Scan  </button>
+					<button class="btn btn-default" name="14" type="submit"> Dual Scan  </button>
+					<button class="btn btn-default" name="15" type="submit"> Fade  </button>
+					<button class="btn btn-default" name="16" type="submit"> Theater Chase  </button>
+					<button class="btn btn-default" name="17" type="submit"> Theater Chase Rainbow  </button>
+					<button class="btn btn-default" name="55" type="submit"> ICU  </button>
+					
+                </div>
+                <div class="col-sm-4 btn-group-vertical">
+                    <button class="btn btn-default" name="18" type="submit"> Running Lights  </button>
+					<button class="btn btn-default" name="19" type="submit"> Twinkle  </button>
+					<button class="btn btn-default" name="20" type="submit"> Twinkle Random  </button>
+					<button class="btn btn-default" name="21" type="submit"> Twinkle Fade  </button>
+					<button class="btn btn-default" name="22" type="submit"> Twinkle Fade Random  </button>
+					<button class="btn btn-default" name="23" type="submit"> Sparkle  </button>
+					<button class="btn btn-default" name="24" type="submit"> Flash Sparkle  </button>
+					<button class="btn btn-default" name="25" type="submit"> Hyper Sparkle  </button>
+					<button class="btn btn-default" name="26" type="submit"> Strobe  </button>
+					<button class="btn btn-default" name="27" type="submit"> Strobe Rainbow  </button>
+					<button class="btn btn-default" name="28" type="submit"> Multi Strobe  </button>
+					<button class="btn btn-default" name="29" type="submit"> Blink Rainbow  </button>
+					<button class="btn btn-default" name="30" type="submit"> Chase White  </button>
+					<button class="btn btn-default" name="31" type="submit"> Chase Color  </button>
+					<button class="btn btn-default" name="32" type="submit"> Chase Random  </button>
+					<button class="btn btn-default" name="33" type="submit"> Chase Rainbow  </button>
+					<button class="btn btn-default" name="34" type="submit"> Chase Flash  </button>
+					<button class="btn btn-default" name="35" type="submit"> Chase Flash Random  </button>
+                </div>
+                <div class="col-sm-4 btn-group-vertical">
+                    <button class="btn btn-default" name="36" type="submit"> Chase Rainbow White  </button>
+					<button class="btn btn-default" name="37" type="submit"> Chase Blackout  </button>
+					<button class="btn btn-default" name="38" type="submit"> Chase Blackout Rainbow  </button>
+					<button class="btn btn-default" name="39" type="submit"> Color Sweep Random  </button>
+					<button class="btn btn-default" name="40" type="submit"> Running Color  </button>
+					<button class="btn btn-default" name="41" type="submit"> Running Red Blue  </button>
+					<button class="btn btn-default" name="42" type="submit"> Running Random  </button>
+					<button class="btn btn-default" name="43" type="submit"> Larson Scanner  </button>
+					<button class="btn btn-default" name="44" type="submit"> Comet  </button>
+					<button class="btn btn-default" name="45" type="submit"> Fireworks  </button>
+					<button class="btn btn-default" name="46" type="submit"> Fireworks Random  </button>
+					<button class="btn btn-default" name="47" type="submit"> Merry Christmas  </button>
+					<button class="btn btn-default" name="48" type="submit"> Fire Flicker  </button>
+					<button class="btn btn-default" name="49" type="submit"> Fire Flicker (soft)  </button>
+					<button class="btn btn-default" name="50" type="submit"> Fire Flicker (intense)  </button>
+					<button class="btn btn-default" name="51" type="submit"> Circus Combustus  </button>
+					<button class="btn btn-default" name="52" type="submit"> Halloween  </button>
+					<button class="btn btn-default" name="53" type="submit"> Bicolor Chase  </button>
+					<button class="btn btn-default" name="54" type="submit"> Tricolor Chase  </button>
+					
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+        
+        <p>Click <a href="/">here</a> to go home.</p>
+    </div>
+</body>
+</html>
